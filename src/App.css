@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+body {
+  padding-top: 5rem;
+  font-family: "Geist Mono", serif;
+  background-color: #17184B;
+  text-align: center;
+}
+
+h1 {
+  color: #D8E63C;
+}
+
+.ToDoWrapper {
+  margin: 0 auto; 
+  max-width: 500px; 
+  padding: 20px; 
+  box-sizing: border-box; /* padding doesn't increase the width */
+}
+
+.ToDoForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  gap: 10px;
+  width: 100%; 
+}
+
+.todo-input {
+  font-family: "Geist Mono", serif;
+  flex: 1; 
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #F0EEE9;
+}
+
+.todo-btn {
+  font-family: "Geist Mono", serif;
+  padding: 10px 20px;
+  background-color: #D6B4FC; 
+  color: #17184B;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  white-space: nowrap; 
+}
+
+.todo-btn:hover {
+  background-color: #a47fcf; 
+}
+
+/* Each task instance */
+.ToDo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F0EEE9;
+  border-radius: 5px;
+  width: 100%; 
+  box-sizing: border-box; /* padding doesn't increase the width */
+
+  margin-top: 10px;
+  padding: 3px 10px;
+}
+
+.ToDo p {
+  margin: 0; 
+  font-size: 16px;
+  color: #17184B;
+}
+
+.ToDo p.completed {
+  text-decoration: line-through; /* Strike-through for completed tasks */
+  color: #888; 
+}
+
+/* Style for the action icons */
+.ToDo div {
+  display: flex;
+  gap: 10px;
+}
+
+.ToDo div .fa-trash, 
+.ToDo div .fa-pen-to-square {
+  color: #273287; 
+}
+
+.ToDo div .fa-trash:hover,
+.ToDo div .fa-pen-to-square:hover {
+  color: #17184B; 
+}
+
+p.footer {
+  padding-top: 10rem;
+  color: #F0EEE9;
+}
